@@ -1,0 +1,70 @@
+
+Invoke-RestMethod -Headers @{"Metadata"="true"} -Method GET -Uri "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | ConvertTo-Json 
+
+
+
+output:
+
+{
+    "compute":  {
+                    "azEnvironment":  "AzurePublicCloud",
+                    "customData":  "",
+                    "evictionPolicy":  "",
+                    "isHostCompatibilityLayerVm":  "false",
+                    "licenseType":  "",
+                    "location":  "northeurope",
+                    "name":  "buildaf70624a-1",
+                    "offer":  "Dynamics",
+                    "osProfile":  {
+                                      "adminUsername":  "Admin4899a270ba",
+                                      "computerName":  "buildaf70624a-1",
+                                      "disablePasswordAuthentication":  ""
+                                  },
+                    "osType":  "Windows",
+                    "placementGroupId":  "",
+                    "plan":  {
+                                 "name":  "",
+                                 "product":  "",
+                                 "publisher":  ""
+                             },
+                    "platformFaultDomain":  "0",
+                    "platformUpdateDomain":  "0",
+                    "priority":  "",
+                    "provider":  "Microsoft.Compute",
+                    "publicKeys":  [
+
+                                   ],
+                    "publisher":  "MicrosoftDynamicsAX",
+                    "resourceGroupName":  "ci-peap-bld",
+                    "resourceId":  "/subscriptions/7dfe5003-c58f-41e7-94d9-929fdd5b7a7c/resourceGroups/ci-peap-bld/providers/Microsoft.Compute/virtualMachines/buildaf70624a-1",
+                    "securityProfile":  {
+                                            "secureBootEnabled":  "false",
+                                            "virtualTpmEnabled":  "false"
+                                        },
+                    "sku":  "Pre-Req-AX7-Onebox-V4",
+                    "storageProfile":  {
+                                           "dataDisks":  "       ",
+                                           "imageReference":  "@{id=; offer=Dynamics; publisher=MicrosoftDynamicsAX; sku=Pre-Req-AX7-Onebox-V4; version=7.0.20201113}",
+                                           "osDisk":  "@{caching=ReadWrite; createOption=FromImage; diffDiskSettings=; diskSizeGB=127; encryptionSettings=; image=; managedDisk=; name=osdisk; osType=Windows; vhd=
+                                            ; writeAcceleratorEnabled=false}",
+                                           "resourceDisk":  "@{size=57344}"
+                                       },
+                    "subscriptionId":  "7dfe5003-c58f-41e7-94d9-929fdd5b7a7c",
+                    "tags":  "Solution:DIS;Stopschedule:STOPEODNL",
+                    "tagsList":  [
+                                     "@{name=Solution; value=DIS}",
+                                     "@{name=Stopschedule; value=STOPEODNL}"
+                                 ],
+                    "userData":  "",
+                    "version":  "7.0.20201113",
+                    "vmId":  "9d2c1ec7-4ebe-4572-8390-1ae1ab1bc089",
+                    "vmScaleSetName":  "",
+                    "vmSize":  "Standard_DS12_v2",
+                    "zone":  ""
+                },
+    "network":  {
+                    "interface":  [
+                                      "@{ipv4=; ipv6=; macAddress=000D3AB2AABE}"
+                                  ]
+                }
+}

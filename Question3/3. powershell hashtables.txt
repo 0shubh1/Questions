@@ -1,0 +1,21 @@
+$hash= @{
+     “x”=@{
+        “y”={
+           “z”=”a”}
+           }
+        }
+
+if($hash.values.containsvalue(a)){
+ write-host "Yes, value is present"
+}
+
+or 
+
+we using for loop, to parse the values one by one
+
+$counter=0
+foreach($h in $hash.getnumerator()){
+    if($h.value.values -eq a){
+        $counter += 1
+    }
+}
